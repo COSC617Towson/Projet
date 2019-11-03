@@ -1,0 +1,23 @@
+{
+  "name": "project",
+  "version": "1.0.0",
+  "description": "ParkReview",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/COSC617Towson/Project.git"
+  },
+  "author": "Dharamveer Singh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/COSC617Towson/Project/issues"
+  },
+  "homepage": "https://github.com/COSC617Towson/Project#readme",
+  "dependencies": {
+    "ejs": "^2.7.1",
+    "express": "^4.17.1"
+  }
+}
