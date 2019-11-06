@@ -1,5 +1,6 @@
 var express = require("express");
 var app = express();
+var path = require('path');
 
 app.set("view engine", "ejs");
 
@@ -21,6 +22,11 @@ app.get("/campgrounds", function (req, res) {
 
     res.render("campgrounds", { campgrounds: campgrounds });
 });
+
+app.get("/Sample", function (req, res) {
+    res.sendFile(path.join(__dirname+'/YelpCamp/Campground.html'));
+});
+
 
 app.get("*", function (req, res) {
     res.status(404).send('Code 404: Not found!');
